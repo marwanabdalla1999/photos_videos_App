@@ -2,7 +2,6 @@ package com.example.task.videosScreen.viewModels
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.viewModelScope
 import com.example.task.repositories.interfaces.IRepo
 import dagger.hilt.android.lifecycle.HiltViewModel

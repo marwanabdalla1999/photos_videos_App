@@ -12,14 +12,12 @@ import androidx.activity.result.contract.ActivityResultContracts
 import androidx.annotation.RequiresApi
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
-import androidx.lifecycle.lifecycleScope
 import com.example.task.databinding.FragmentImagesBinding
 import com.example.task.imagesScreen.viewModels.ImagesViewModel
 import com.example.task.imagesScreen.adapters.ImagesAdapter
 import com.example.task.permissions.CheckForMediaPermissions
 import com.example.task.permissions.IPermissions
 import dagger.hilt.android.AndroidEntryPoint
-import kotlinx.coroutines.launch
 import javax.inject.Inject
 
 
