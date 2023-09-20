@@ -7,33 +7,32 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.task.R
 import com.example.task.databinding.ImageItemBinding
 
-class ImagesAdapter :RecyclerView.Adapter<ImagesAdapter.ViewHolder>() {
+class ImagesAdapter : RecyclerView.Adapter<ImagesAdapter.ViewHolder>() {
 
-   private  var images:List<String> = ArrayList()
+    private var images: List<String> = ArrayList()
 
-    fun setData(images:List<String>){
-        this.images=images
+    fun setData(images: List<String>) {
+        this.images = images
 
-notifyItemRangeChanged(0,images.size)
+        notifyItemRangeChanged(0, images.size)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val binding: ImageItemBinding = DataBindingUtil.inflate(
-            LayoutInflater.from(parent.context),
-            R.layout.image_item, parent, false
+            LayoutInflater.from(parent.context), R.layout.image_item, parent, false
         )
         return ViewHolder(binding)
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
 
-            holder.binding.imageUrl=images[position]
+        holder.binding.imageUrl = images[position]
     }
 
     override fun getItemCount(): Int {
-      return images.size
+        return images.size
     }
 
-    class ViewHolder(val binding: ImageItemBinding) :RecyclerView.ViewHolder(binding.root)
+    class ViewHolder(val binding: ImageItemBinding) : RecyclerView.ViewHolder(binding.root)
 
 }

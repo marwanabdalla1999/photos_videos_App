@@ -48,6 +48,7 @@ dependencies {
     testImplementation (libs.junit.ktx)
     testImplementation(libs.junit)
     testImplementation (libs.robolectric)
+    testImplementation (libs.kotlinx.coroutines.test)
     implementation(libs.androidx.work.runtime.ktx)
     implementation(libs.core.ktx)
     implementation(libs.appcompat)

@@ -8,6 +8,7 @@ import androidx.test.ext.junit.runners.AndroidJUnit4
 import com.example.task.videosScreen.viewModels.VideosViewModel
 import com.example.task.virtualData.VirtualData
 import com.example.task.virtualRepository.VirtualImagesRepository
+import kotlinx.coroutines.test.runTest
 import org.junit.Assert
 import org.junit.runner.RunWith
 
@@ -26,11 +27,12 @@ class VideoViewModelTest {
     }
 
     @Test
-    fun getImage() {
+    fun testVideos() = runTest {
         videoViewModel.getVideos()
-        val result = videoViewModel.observeVideos()
-        Assert.assertNotNull(result)
-
+        videoViewModel.observeVideos().observeForever { data ->
+            Assert.assertNotNull(data)
+            Assert.assertTrue(data.isNotEmpty())
+        }
     }
 
 
