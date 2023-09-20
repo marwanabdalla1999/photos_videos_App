@@ -95,10 +95,10 @@ class Videos : Fragment() {
     }
 
     private fun getVideos() {
-        lifecycleScope.launch {
+
             videosViewModel.getVideos()
 
-        }
+
 
 
     }

@@ -2,8 +2,11 @@ package com.example.task.videosScreen.viewModels
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+import androidx.lifecycle.lifecycleScope
+import androidx.lifecycle.viewModelScope
 import com.example.task.repositories.interfaces.IRepo
 import dagger.hilt.android.lifecycle.HiltViewModel
+import kotlinx.coroutines.launch
 import javax.inject.Inject
 import javax.inject.Named
 
@@ -13,14 +16,14 @@ class VideosViewModel @Inject  constructor(@Named("Videos") private val reposito
 
 private val videos =MutableLiveData<List<String>>()
 
-     suspend fun getVideos(){
-
-        videos.postValue(repository.getData())
+      fun getVideos(){
+         viewModelScope.launch {
+             videos.postValue(repository.getData())
+         }
     }
 
 
-    fun observeVideos(): MutableLiveData<List<String>> {
-        return videos
-    }
+    fun observeVideos(): MutableLiveData<List<String>> = videos
+
 
 }

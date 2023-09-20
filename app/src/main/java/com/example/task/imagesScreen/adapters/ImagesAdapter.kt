@@ -14,8 +14,7 @@ class ImagesAdapter :RecyclerView.Adapter<ImagesAdapter.ViewHolder>() {
     fun setData(images:List<String>){
         this.images=images
 
-        notifyDataSetChanged()
-
+notifyItemRangeChanged(0,images.size)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {

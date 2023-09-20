@@ -96,10 +96,10 @@ class Images : Fragment() {
 
 
     private fun getImages() {
-        lifecycleScope.launch {
+
             imagesViewModel.getImages()
 
-        }
+
 
     }
 

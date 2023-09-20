@@ -15,7 +15,7 @@ class VideosAdapter : RecyclerView.Adapter<VideosAdapter.ViewHolder>() {
     fun setData(videos: List<String>) {
         this.videos = videos
 
-        notifyDataSetChanged()
+        notifyItemRangeChanged(0,videos.size)
 
     }
 
