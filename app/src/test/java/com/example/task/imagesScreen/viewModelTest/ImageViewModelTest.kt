@@ -23,7 +23,6 @@ class ImageViewModelTest {
     private lateinit var imagesViewModel: ImagesViewModel
     private lateinit var virtualData: IDataSource
 
-
     @Before
     fun setUp() {
 
@@ -35,9 +34,8 @@ class ImageViewModelTest {
     @OptIn(ExperimentalCoroutinesApi::class)
     @Test
     fun testImages() = runTest(UnconfinedTestDispatcher()) {
-        launch {
             imagesViewModel.getImages()
-        }
+
         imagesViewModel.observeImages().observeForever { data ->
             Assert.assertNotNull(data)
             Assert.assertEquals(data.size,5)
