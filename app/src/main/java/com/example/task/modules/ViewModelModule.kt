@@ -3,9 +3,9 @@ package com.example.task.modules
 import android.content.Context
 import com.example.task.dataSource.mediaStore.Images
 import com.example.task.dataSource.mediaStore.Videos
-import com.example.task.repositories.interfaces.IRepo
-import com.example.task.repositories.ImagesRepository
-import com.example.task.repositories.VideosRepository
+import com.example.task.repositories.mediaStoreRepo.IRepositoryMediaStore
+import com.example.task.repositories.mediaStoreRepo.ImagesRepository
+import com.example.task.repositories.mediaStoreRepo.VideosRepository
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -24,7 +24,7 @@ object  ViewModelModule {
     @Provides
     @ViewModelScoped
     @Named("Images")
-     fun getImagesMediaStore(@ApplicationContext context: Context): IRepo {
+     fun getImagesMediaStore(@ApplicationContext context: Context): IRepositoryMediaStore {
 
          return ImagesRepository(Images(context))
      }
@@ -32,7 +32,7 @@ object  ViewModelModule {
     @Provides
     @ViewModelScoped
     @Named("Videos")
-    fun getVideosMediaStore(@ApplicationContext context: Context): IRepo {
+    fun getVideosMediaStore(@ApplicationContext context: Context): IRepositoryMediaStore {
 
         return VideosRepository(Videos(context))
     }

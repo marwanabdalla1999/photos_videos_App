@@ -1,4 +1,4 @@
-package com.example.task.permissions
+package com.example.task.permissions.mediaStorePermissions
 
 import android.Manifest
 import android.app.Activity

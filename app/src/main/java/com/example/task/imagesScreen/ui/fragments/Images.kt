@@ -15,8 +15,8 @@ import androidx.fragment.app.viewModels
 import com.example.task.databinding.FragmentImagesBinding
 import com.example.task.imagesScreen.viewModels.ImagesViewModel
 import com.example.task.imagesScreen.adapters.ImagesAdapter
-import com.example.task.permissions.CheckForMediaPermissions
-import com.example.task.permissions.IPermissions
+import com.example.task.permissions.mediaStorePermissions.CheckForMediaPermissions
+import com.example.task.permissions.mediaStorePermissions.IPermissions
 import dagger.hilt.android.AndroidEntryPoint
 import javax.inject.Inject
 

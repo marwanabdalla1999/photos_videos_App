@@ -12,8 +12,8 @@ import androidx.annotation.RequiresApi
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import com.example.task.databinding.FragmentVideosBinding
-import com.example.task.permissions.CheckForMediaPermissions
-import com.example.task.permissions.IPermissions
+import com.example.task.permissions.mediaStorePermissions.CheckForMediaPermissions
+import com.example.task.permissions.mediaStorePermissions.IPermissions
 import com.example.task.videosScreen.adapters.VideosAdapter
 import com.example.task.videosScreen.viewModels.VideosViewModel
 import dagger.hilt.android.AndroidEntryPoint

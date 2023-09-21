@@ -7,7 +7,7 @@ import org.junit.Test
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import com.example.task.videosScreen.viewModels.VideosViewModel
 import com.example.task.virtualData.VirtualData
-import com.example.task.virtualRepository.VirtualImagesRepository
+import com.example.task.virtualRepository.VirtualRepository
 import kotlinx.coroutines.test.runTest
 import org.junit.Assert
 import org.junit.runner.RunWith
@@ -22,7 +22,7 @@ class VideoViewModelTest {
     @Before
     fun setUp() {
         virtualData = VirtualData()
-        videoViewModel = VideosViewModel(VirtualImagesRepository(virtualData))
+        videoViewModel = VideosViewModel(VirtualRepository(virtualData))
 
     }
 
