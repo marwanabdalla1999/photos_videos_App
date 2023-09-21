@@ -3,8 +3,8 @@ package com.example.task.repository
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import com.example.task.dataSource.interfaces.IDataSource
 import com.example.task.repositories.mediaStoreRepository.IRepositoryMediaStore
+import com.example.task.repositories.mediaStoreRepository.VideosRepo
 import com.example.task.virtualData.VirtualData
-import com.example.task.virtualRepository.VirtualRepository
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.test.UnconfinedTestDispatcher
@@ -16,7 +16,7 @@ import org.junit.runner.RunWith
 
 
 @RunWith(AndroidJUnit4::class)
-class RepositoryTest {
+class VideoRepo {
 
 
     private lateinit var localDataSource: IDataSource
@@ -26,7 +26,7 @@ class RepositoryTest {
     @Before
     fun setUp(){
         localDataSource = VirtualData()
-        repository = VirtualRepository(localDataSource)
+        repository = VideosRepo(localDataSource)
     }
 
     @OptIn(ExperimentalCoroutinesApi::class)
