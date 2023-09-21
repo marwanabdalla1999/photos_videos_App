@@ -49,6 +49,7 @@ dependencies {
     testImplementation(libs.junit)
     testImplementation (libs.robolectric)
     testImplementation (libs.kotlinx.coroutines.test)
+    testImplementation (libs.androidx.core.testing)
     implementation(libs.androidx.work.runtime.ktx)
     implementation(libs.core.ktx)
     implementation(libs.appcompat)
@@ -66,6 +67,7 @@ dependencies {
     kapt(libs.hiltcompiler)
     implementation(libs.fragment)
     implementation(libs.navigationfragment)
+
 
 
 
