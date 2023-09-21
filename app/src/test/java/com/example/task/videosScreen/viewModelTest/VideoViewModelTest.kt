@@ -2,7 +2,7 @@ package com.example.task.videosScreen.viewModelTest
 
 
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
-import com.example.task.dataSource.interfaces.IDataSource
+import com.example.task.dataSource.IDataSource
 import org.junit.Before
 import org.junit.Test
 import androidx.test.ext.junit.runners.AndroidJUnit4

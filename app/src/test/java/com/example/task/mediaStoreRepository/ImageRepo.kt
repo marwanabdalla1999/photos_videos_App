@@ -1,9 +1,9 @@
 package com.example.task.mediaStoreRepository
 
 import androidx.test.ext.junit.runners.AndroidJUnit4
-import com.example.task.dataSource.interfaces.IDataSource
+import com.example.task.dataSource.IDataSource
 import com.example.task.repositories.mediaStoreRepository.IRepositoryMediaStore
-import com.example.task.repositories.mediaStoreRepository.ImagesRepo
+import com.example.task.repositories.mediaStoreRepository.RepositoryMediaStore
 import com.example.task.virtualData.VirtualData
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.launch
@@ -26,7 +26,7 @@ class ImageRepo {
     @Before
     fun setUp(){
         localDataSource = VirtualData()
-        repository = ImagesRepo(localDataSource)
+        repository = RepositoryMediaStore(localDataSource)
     }
 
     @OptIn(ExperimentalCoroutinesApi::class)

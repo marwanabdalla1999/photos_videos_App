@@ -1,4 +1,4 @@
-package com.example.task.dataSource.interfaces
+package com.example.task.dataSource
 
 interface IDataSource {
 

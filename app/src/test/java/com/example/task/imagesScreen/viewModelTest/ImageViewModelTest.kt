@@ -3,7 +3,7 @@ package com.example.task.imagesScreen.viewModelTest
 
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import androidx.test.ext.junit.runners.AndroidJUnit4
-import com.example.task.dataSource.interfaces.IDataSource
+import com.example.task.dataSource.IDataSource
 import com.example.task.imagesScreen.viewModels.ImagesViewModel
 import com.example.task.utils.getOrAwaitValue
 import com.example.task.virtualData.VirtualData

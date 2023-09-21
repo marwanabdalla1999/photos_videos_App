@@ -2,7 +2,7 @@ package com.example.task.dataSource.mediaStore
 
 import android.content.Context
 import android.provider.MediaStore
-import com.example.task.dataSource.interfaces.IDataSource
+import com.example.task.dataSource.IDataSource
 
 class Videos(val context: Context) : IDataSource {
 
