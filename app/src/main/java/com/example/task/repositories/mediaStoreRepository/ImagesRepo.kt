@@ -4,7 +4,7 @@ package com.example.task.repositories.mediaStoreRepository
 import com.example.task.dataSource.interfaces.IDataSource
 
 
-class ImagesRepository (private val dataSource: IDataSource) : IRepositoryMediaStore {
+class ImagesRepo (private val dataSource: IDataSource) : IRepositoryMediaStore {
 
 
 
