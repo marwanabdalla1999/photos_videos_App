@@ -7,7 +7,6 @@ import com.example.task.imagesScreen.viewModels.ImagesViewModel
 import com.example.task.virtualData.VirtualData
 import com.example.task.virtualRepository.VirtualRepository
 import kotlinx.coroutines.ExperimentalCoroutinesApi
-import kotlinx.coroutines.launch
 import kotlinx.coroutines.test.UnconfinedTestDispatcher
 
 import kotlinx.coroutines.test.runTest
