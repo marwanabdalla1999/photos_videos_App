@@ -1,7 +1,7 @@
 package com.example.task.virtualRepository
 
 import com.example.task.dataSource.interfaces.IDataSource
-import com.example.task.repositories.mediaStoreRepo.IRepositoryMediaStore
+import com.example.task.repositories.mediaStoreRepository.IRepositoryMediaStore
 
 class VirtualRepository(private val virtualData: IDataSource) : IRepositoryMediaStore {
 

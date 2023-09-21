@@ -2,7 +2,7 @@ package com.example.task.repository
 
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import com.example.task.dataSource.interfaces.IDataSource
-import com.example.task.repositories.mediaStoreRepo.IRepositoryMediaStore
+import com.example.task.repositories.mediaStoreRepository.IRepositoryMediaStore
 import com.example.task.virtualData.VirtualData
 import com.example.task.virtualRepository.VirtualRepository
 import kotlinx.coroutines.ExperimentalCoroutinesApi

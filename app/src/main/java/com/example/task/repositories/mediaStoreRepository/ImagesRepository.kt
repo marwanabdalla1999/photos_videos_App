@@ -1,4 +1,4 @@
-package com.example.task.repositories.mediaStoreRepo
+package com.example.task.repositories.mediaStoreRepository
 
 
 import com.example.task.dataSource.interfaces.IDataSource

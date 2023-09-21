@@ -1,4 +1,4 @@
-package com.example.task.repositories.mediaStoreRepo
+package com.example.task.repositories.mediaStoreRepository
 
 
 

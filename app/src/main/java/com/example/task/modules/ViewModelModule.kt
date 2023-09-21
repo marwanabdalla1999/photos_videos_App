@@ -3,9 +3,9 @@ package com.example.task.modules
 import android.content.Context
 import com.example.task.dataSource.mediaStore.Images
 import com.example.task.dataSource.mediaStore.Videos
-import com.example.task.repositories.mediaStoreRepo.IRepositoryMediaStore
-import com.example.task.repositories.mediaStoreRepo.ImagesRepository
-import com.example.task.repositories.mediaStoreRepo.VideosRepository
+import com.example.task.repositories.mediaStoreRepository.IRepositoryMediaStore
+import com.example.task.repositories.mediaStoreRepository.ImagesRepository
+import com.example.task.repositories.mediaStoreRepository.VideosRepository
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
