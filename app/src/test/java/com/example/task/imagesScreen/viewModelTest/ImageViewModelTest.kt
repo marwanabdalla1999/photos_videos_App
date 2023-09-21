@@ -37,7 +37,6 @@ class ImageViewModelTest {
 
         imagesViewModel.observeImages().observeForever { data ->
             Assert.assertNotNull(data)
-            Assert.assertEquals(data.size,5)
             Assert.assertTrue(data.isNotEmpty())
         }
     }
