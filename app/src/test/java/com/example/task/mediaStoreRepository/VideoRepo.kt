@@ -1,9 +1,9 @@
-package com.example.task.repository
+package com.example.task.mediaStoreRepository
 
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import com.example.task.dataSource.interfaces.IDataSource
 import com.example.task.repositories.mediaStoreRepository.IRepositoryMediaStore
-import com.example.task.repositories.mediaStoreRepository.ImagesRepo
+import com.example.task.repositories.mediaStoreRepository.VideosRepo
 import com.example.task.virtualData.VirtualData
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.launch
@@ -16,7 +16,7 @@ import org.junit.runner.RunWith
 
 
 @RunWith(AndroidJUnit4::class)
-class ImageRepo {
+class VideoRepo {
 
 
     private lateinit var localDataSource: IDataSource
@@ -26,7 +26,7 @@ class ImageRepo {
     @Before
     fun setUp(){
         localDataSource = VirtualData()
-        repository = ImagesRepo(localDataSource)
+        repository = VideosRepo(localDataSource)
     }
 
     @OptIn(ExperimentalCoroutinesApi::class)
